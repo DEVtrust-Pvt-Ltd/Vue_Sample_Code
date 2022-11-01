@@ -12,11 +12,11 @@ export default {
     };
   },
   methods: {
-    async submitHandler(data) {
+    async submitHandler(data) {  // Posting data on API to update in database
       var self = this;
       self.message = "";
       await this.$axios
-        .post("/v1/auth/profile-update", data)
+        .post("/v1/auth/profile-update", data)  
         .then(function (response) {
           self.message = "Your Profile Updated Successfully";
           self.msg_class_dynamic = "success_msg_green";

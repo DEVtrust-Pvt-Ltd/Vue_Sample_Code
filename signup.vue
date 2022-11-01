@@ -13,7 +13,7 @@ export default {
     };
   },
   methods: {
-    async submitHandler(data) {
+    async submitHandler(data) {   // Posting data on api for new signup
       var self = this;
       self.inputErrors = {};
       await this.$axios
